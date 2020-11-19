@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="xmlDoamin" class = "com.base.springbase.common.beanassembly.xml.domain.XmlDomain">
+        <!--装配Long类型的id-->
+        <property name="id" value="1"></property>
+        <!--装配List类型的list-->
+        <property name="list">
+            <list>
+                <value>value1</value>
+                <value>value2</value>
+                <value>value3</value>
+                <value>value4</value>
+            </list>
+        </property>
+        <!--装配Map类型的map-->
+        <property name="map">
+            <map>
+                <entry key="key1" value="1"/>
+                <entry key="key2" value="2"/>
+                <entry key="key3" value="3"/>
+            </map>
+        </property>
+        <!--装配Properties类的properties-->
+        <property name="properties">
+            <props>
+                <prop key="prop1">value-prop-1</prop>
+                <prop key="prop2">value-prop-2</prop>
+                <prop key="prop3">value-prop-3</prop>
+            </props>
+        </property>
+        <property name="set">
+            <set>
+                <value>value-set1</value>
+                <value>value-set2</value>
+                <value>value-set3</value>
+            </set>
+        </property>
+        <property name="array">
+            <array>
+                <value>value-array-1</value>
+                <value>value-array-2</value>
+                <value>value-array-3</value>
+            </array>
+        </property>
+    </bean>
+</beans>
